@@ -48,13 +48,20 @@ word[0] == "a"
 end
 end
 
-def sum_array
+def sum_array(array)
   sum = 0
   array.each do |num|
     sum+=num
-end
+  end
+sum
 end
 
-def add_s
-
+def add_s(array)
+  array.collect do |word|
+    if array[1] == word
+      word
+    else
+      word + "s"
+    end
+end
 end
